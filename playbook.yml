@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Docker Compose
+      apt:
+        name: docker-compose
+        state: present
